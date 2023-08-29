@@ -1,37 +1,47 @@
 <title>Penguin Hub | English</title>
-<h1 style="font-family:verdana;">The Cat</h1>
-<p style="font-family:verdana;">Once upon a time, there was a stray cat named Mittens who lived in an alleyway. She was a small, black cat with white paws and a big heart. Mittens was always hungry and cold, and she longed for a warm home to call her own.
+<html>
+<head>
+<title>The Cat Who Found a Home</title>
+</head>
+<body>
+<h1>The Cat Who Found a Home</h1>
+<p>Once upon a time, there was a stray cat named Mittens who lived in an alleyway. She was a small, black cat with white paws and a big heart. Mittens was always hungry and cold, and she longed for a warm home to call her own.</p>
+<p>One day, Mittens was walking down the alleyway when she saw a little girl playing in her front yard. The little girl was petting a dog, and Mittens was fascinated. She had never seen a dog before, and she was curious about it.</p>
+<p>The little girl saw Mittens and smiled. "Hello, kitty," she said. "Would you like to come and play with me?"</p>
+<p>Mittens hesitated for a moment, but then she decided to trust the little girl. She walked over to the little girl and rubbed against her leg.</p>
+<p>The little girl picked up Mittens and held her close. "You're so soft," she said. "I'm going to call you Mittens."</p>
+<p>Mittens purred and closed her eyes. She had finally found a home.</p>
+<p>The little girl took Mittens inside and gave her some food and water. Then, she showed Mittens to her bed, which was a soft, warm blanket on the floor. Mittens curled up on the blanket and fell asleep.</p>
+<p>The next morning, the little girl woke up and found Mittens curled up next to her. She smiled and petted Mittens on the head. "Good morning, Mittens," she said. "I'm so glad you're here."</p>
+<p>Mittens purred and rubbed against the little girl's hand. She was so happy to have a home and a family to love her.</p>
 
-One day, Mittens was walking down the alleyway when she saw a little girl playing in her front yard. The little girl was petting a dog, and Mittens was fascinated. She had never seen a dog before, and she was curious about it.
+<p>**Question:**</p>
 
-The little girl saw Mittens and smiled. "Hello, kitty," she said. "Would you like to come and play with me?"
+<p>How does the cat find a home?</p>
 
-Mittens hesitated for a moment, but then she decided to trust the little girl. She walked over to the little girl and rubbed against her leg.
+<div class="questions">
+  <input type="radio" name="answer" value="1"> The little girl finds her in the alleyway.
+  <input type="radio" name="answer" value="2"> The little girl sees her playing with the dog.
+  <input type="radio" name="answer" value="3"> The little girl invites her to come and play with her.
+  <input type="radio" name="answer" value="4"> The little girl picks her up and takes her home.
+</div>
 
-The little girl picked up Mittens and held her close. "You're so soft," she said. "I'm going to call you Mittens."
-
-Mittens purred and closed her eyes. She had finally found a home.
-
-The little girl took Mittens inside and gave her some food and water. Then, she showed Mittens to her bed, which was a soft, warm blanket on the floor. Mittens curled up on the blanket and fell asleep.
-
-The next morning, the little girl woke up and found Mittens curled up next to her. She smiled and petted Mittens on the head. "Good morning, Mittens," she said. "I'm so glad you're here."</p>
-<h1 style="font-family:verdana;">Questions</h1>
-<h3 style="font-family:verdana;">What does the little girl do after she sees Mittens?</h3>
 <script>
-function openFile(file) {
-  window.location.href = file;
-}
+var correctAnswer = 4;
 
-var button = document.querySelector("button");
-button.onclick = function() {
-  var answer = prompt("What is the answer to the question?");
-  if (answer == "correct_answer") {
-    openFile("file_path.txt");
+function checkAnswer() {
+  var answer = document.querySelector('input[name="answer"]:checked').value;
+
+  if (answer == correctAnswer) {
+    alert("Correct answer!");
   } else {
     alert("Incorrect answer!");
   }
-};
+}
 
-
+document.querySelector('input[name="answer"]').addEventListener('change', checkAnswer);
 </script>
+</body>
+</html>
+
 
