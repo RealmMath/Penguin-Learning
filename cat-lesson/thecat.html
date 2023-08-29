@@ -17,8 +17,21 @@ The little girl took Mittens inside and gave her some food and water. Then, she 
 The next morning, the little girl woke up and found Mittens curled up next to her. She smiled and petted Mittens on the head. "Good morning, Mittens," she said. "I'm so glad you're here."</p>
 <h1 style="font-family:verdana;">Questions</h1>
 <h3 style="font-family:verdana;">What does the little girl do after she sees Mittens?</h3>
-<button type="button" onclick="window.location.href='/cat-lesson/thecat1.html'">A. She runs away.</button>
-<button type="button" onclick="window.location.href='/cat-lesson/thecat2.html'">B. She ignores Mittens.</button>
-<button type="button" onclick="window.location.href='/cat-lesson/thecat3.html'">C. She pets Mittens.</button>
-<button type="button" onclick="window.location.href='/cat-lesson/thecat4.html'">D. She picks up Mittens and holds her close.</button>
+<script>
+function openFile(file) {
+  window.location.href = file;
+}
+
+var button = document.querySelector("button");
+button.onclick = function() {
+  var answer = prompt("What is the answer to the question?");
+  if (answer == "correct_answer") {
+    openFile("file_path.txt");
+  } else {
+    alert("Incorrect answer!");
+  }
+};
+
+
+</script>
 
